@@ -1,0 +1,35 @@
+# CMake SPARC and PowerPC ELF Issue
+
+Toolchains:
+
+```shell
+mkdir binsparc
+../binutils-2.30/configure --target sparc-elf --prefix=/usr/local --disable-nls
+make
+sudo make install
+cd ..
+
+mkdir binppc
+../binutils-2.39/configure --target powerpc-elf --prefix=/usr/local \
+    --disable-nls --with-sysroot
+make
+sudo make install
+cd ..
+
+mkdir gccsparc
+../gcc/configure --target sparc-elf --prefix=/usr/local --disable-nls \
+    --enable-languages=c --without-headers --disable-shared \
+    --disable-libsanitizer --disable-libssp
+make
+sudo make install
+cd ..
+
+mkdir gccppc
+../gcc/configure --target powerpc-elf --prefix=/usr/local --disable-nls \
+    --enable-languages=c --without-headers --disable-shared \
+    --disable-libsanitizer --disable-libssp
+make
+sudo make install
+cd ..
+```
+

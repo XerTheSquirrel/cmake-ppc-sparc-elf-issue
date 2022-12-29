@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSharedSettings">
+    <configurations>
+      <configuration PROFILE_NAME="DebugWSLPPC" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="WSL" GENERATION_OPTIONS="--toolchain powerpc.toolchain.cmake" />
+      <configuration PROFILE_NAME="DebugWSLSparc" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="WSL" GENERATION_OPTIONS="--toolchain sparc.toolchain.cmake" />
+    </configurations>
+  </component>
+</project>
